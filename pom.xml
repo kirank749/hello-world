@@ -211,5 +211,17 @@
     <developerConnection>scm:git:git@github.com:jleetutorial/maven-project.git</developerConnection>
     <tag>HEAD</tag>
     <url>http://github.com/jleetutorial/maven-project</url>
-   </scm>
+   </scm><distributionManagement>
+    <repository>
+      <id>nexusinstance</id>
+      <name>release-maven</name>
+      <url>http://65.0.176.211:8081/repository/release-maven/</url>
+    </repository>
+    <snapshotRepository>
+      <id>nexusinstance</id>
+      <name>snapshots-maven</name>
+      <url>http://65.0.176.211:8081/repository/snapshots-maven/</url>
+    </snapshotRepository>
+  </distributionManagement>
+         
 </project>
